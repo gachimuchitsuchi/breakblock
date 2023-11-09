@@ -216,16 +216,16 @@ meshからキューブの法線ベクトルを取得することができるこ�
 もっとUnityのオブジェクトなどが当たり前に持っているコンポーネントの知識を見つける  
 
 ## 構成するファイル/ディレクトリのリストと簡単な解説  
--Assets
-- DLAssets　ダウンロードした無料アセット
-- Editor
-- Fonts　使用したFont
-- Materials　ゲーム内で使用したマテリアル
-- Prefabs　ゲーム内で作成したプレファブ
-- Scenes　ゲーム内のシーン
-- Script　ソースコード
-	- BreakBlockSene　ブロック崩しを作るのに使用したソースコード
-	- MenuScene　メニュー画面を作るのに使用したソースコード
+- Assets
+	- DLAssets　ダウンロードした無料アセット
+	- Editor
+	- Fonts　使用したFont
+	- Materials　ゲーム内で使用したマテリアル
+	- Prefabs　ゲーム内で作成したプレファブ
+	- Scenes　ゲーム内のシーン
+	- Script　ソースコード
+		- BreakBlockSene　ブロック崩しを作るのに使用したソースコード
+		- MenuScene　メニュー画面を作るのに使用したソースコード
 
 ## 参考文献  
 blockmap:
