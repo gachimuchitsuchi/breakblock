@@ -244,50 +244,50 @@ meshからキューブの法線ベクトルを取得することができるこ�
 blockmap:
 https://qiita.com/yaju/items/5b54016c6574bc84c41d
 
-割れたブロック(スプライト、スプライトマスク):
-//ピクセル説明
-https://shibuya24.info/entry/unity-unit
-//Cubeにひびが徐々に入っているように見せたい
-https://teratail.com/questions/145642
+割れたブロック(スプライト、スプライトマスク):  
+//ピクセル説明  
+https://shibuya24.info/entry/unity-unit  
+//Cubeにひびが徐々に入っているように見せたい  
+https://teratail.com/questions/145642  
 
-//貫通処理
-//反射ベクトルの基礎
-https://qiita.com/edo_m18/items/b145f2f5d2d05f0f29c9
-//unityで反射ベクトルを求める
-https://nekojara.city/unity-object-direction
+//貫通処理  
+//反射ベクトルの基礎  
+https://qiita.com/edo_m18/items/b145f2f5d2d05f0f29c9  
+//unityで反射ベクトルを求める  
+https://nekojara.city/unity-object-direction 
 
-//Skill
-https://3dunity.org/game-create-lesson/srpg-game/debuff-heal-magic/
+//Skill  
+https://3dunity.org/game-create-lesson/srpg-game/debuff-heal-magic/  
 
-//ゲームクリア画面実装方法
-https://tech.pjin.jp/blog/2021/12/08/unity-rungame-16
+//ゲームクリア画面実装方法  
+https://tech.pjin.jp/blog/2021/12/08/unity-rungame-16  
 
-//オブジェクトが消えたときのイベントを受け取る方法
-https://watablog.tech/2020/09/01/post-1876/#i
+//オブジェクトが消えたときのイベントを受け取る方法  
+https://watablog.tech/2020/09/01/post-1876/#i  
 
-//CanVas解説
-https://qiita.com/4_mio_11/items/a65e929ae64a018a24b0
-//配置に関する文献
-https://qiita.com/akira581/items/585c917aa8650768888e
+//CanVas解説  
+https://qiita.com/4_mio_11/items/a65e929ae64a018a24b0  
+//配置に関する文献  
+https://qiita.com/akira581/items/585c917aa8650768888e  
 
-//画面サイズ対応
-https://www.create-forever.games/unity-resolution-game/
+//画面サイズ対応  
+https://www.create-forever.games/unity-resolution-game/  
 
-//Font使用方法
-使用Font M+
-https://mychma.com/unity-textmeshpro-japanese/1239/#index_id6
+//Font使用方法  
+使用Font M+  
+https://mychma.com/unity-textmeshpro-japanese/1239/#index_id6  
 
-//空のアセットの使い方
-https://illust55.com/3233/#toc4
+//空のアセットの使い方  
+https://illust55.com/3233/#toc4  
 
-//カーソルターゲット　ボタンにカーソルが重なったときの処理
-https://teratail.com/questions/360571
+//カーソルターゲット　ボタンにカーソルが重なったときの処理  
+https://teratail.com/questions/360571  
 
-//戻るボタン
-https://kotonohaworks.com/free-icons/modoru/
+//戻るボタン  
+https://kotonohaworks.com/free-icons/modoru/  
 
-//外枠
-https://konsuki.com/7033/#toc1
+//外枠  
+https://konsuki.com/7033/#toc1  
 
-//パーティクル説明
-https://styly.cc/ja/tips/unity-introduction-particle/#i
+//パーティクル説明  
+https://styly.cc/ja/tips/unity-introduction-particle/#i  
