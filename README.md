@@ -25,8 +25,7 @@
 	競技プログラミングで勉強したことがゲームで初めて活用できたのでとても嬉しかった。
 
 実装場所　Script->BreakBlockScene->Manager->ElemReacManager 141行目から
-```
-cpp
+```cs
 //凍結反応
     public void Frozen(GameObject block)
     {
@@ -123,8 +122,7 @@ cpp
 このやり方のせいでボールがブロックの角に重なった際に、２回あたり判定がおき、変な方向にボールが跳ね返ってしまうことを確認しています。
 
 実装場所　Script->BreakBlockScene->Ball->Ball　74行目から146行目
-```
-cpp
+```cs
 
 private void OnTriggerEnter(Collider other)
     {
