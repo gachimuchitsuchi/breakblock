@@ -22,8 +22,10 @@
 バーとボール、ブロックに元素が付与されており、ボールとブロックが異なる元素を持ってぶつかると元素反応が起きます。元素反応はブロックを壊すのに役立つ効果を持っています。この元素反応を駆使しながらすべてのブロックを破壊するとゲームクリアです。
 
 
+![Page3Image1](https://github.com/gachimuchitsuchi/breakblock/assets/101007932/34967c52-dfa1-4a1c-87a9-a91b32d54d79)
 
 図１　雷元素ボール　×　水元素ブロック　の元素反応（感電）
+![Page3Image2](https://github.com/gachimuchitsuchi/breakblock/assets/101007932/6ad7ba5d-dfd9-4be7-9b4c-ba2a9f99e52d)
 
 図２　炎元素ボール　×　雷元素ブロック　の元素反応（過負荷）
 
