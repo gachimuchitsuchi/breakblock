@@ -1,5 +1,5 @@
 
-# 成果物の概要  
+# ゲームの概要  
 タイトル　Elemental Break Block  
 
 作成環境 　Unity3D　Editor Version 2021.3.22f1  
