@@ -25,7 +25,7 @@
 	- Editor
 	- Fonts　使用したFont
 	- Materials　ゲーム内で使用したマテリアル
-	- Prefabs　ゲーム内で作成したプレファブ
+	- Prefabs　作成したプレファブ
 	- Scenes　ゲーム内のシーン
 	- Script　ソースコード
 		- BreakBlockScene　ブロック崩しを作るのに使用したソースコード
