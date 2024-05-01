@@ -28,7 +28,7 @@
 	- Prefabs　ゲーム内で作成したプレファブ
 	- Scenes　ゲーム内のシーン
 	- Script　ソースコード
-		- BreakBlockSene　ブロック崩しを作るのに使用したソースコード
+		- BreakBlockScene　ブロック崩しを作るのに使用したソースコード
 		- MenuScene　メニュー画面を作るのに使用したソースコード
 
 ## 参考文献  
