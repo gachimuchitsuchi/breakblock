@@ -30,6 +30,77 @@
 	- Script　ソースコード
 		- BreakBlockScene　ブロック崩しを作るのに使用したソースコード
 		- MenuScene　メニュー画面を作るのに使用したソースコード
+## 良い実装ができた点
+- 凍結処理
+⽔元素のブロックに氷元素のボールをぶつけると当たった⽔元素ブロックと連結しているブロックが
+すべて凍結する。 この処理を実装に深さ優先探索を使⽤した。 競技プログラミングで勉強したことが
+ゲームで初めて活⽤できたので嬉しかった。
+実装場所 Script->BreakBlockScene->Manager->ElemReacManager 141⾏⽬から
+```
+//凍結反応
+    public void Frozen(GameObject block)
+    {
+        Block b = block.GetComponent<Block>();
+        //2次元配列nowMapの配置位置を取得
+        int x = b.row;
+        int y = b.col;
+
+        block.GetComponent<Renderer>().material = frozenMaterial;
+        //ブロックの子のマテリアルをfrozenに変更
+        ChangeChildrenColor(block);
+
+        b.isFrozen = true;
+        b.blockElement = Elements.None;
+
+        //深さ優先探索
+        for (int dx = -1; dx <= 1; dx++)
+        {
+            for (int dy = -1; dy <= 1; dy++)
+            {
+                //x方向にdx,y方向にdy移動した場所を(nx,ny)とする
+                int nx = x + dx;
+                int ny = y + dy;
+
+                //nx,nyがブロックマップの範囲内かどうか
+                if (0 <= nx && nx < StageMapInfo.STAGE_ROW && 0 <= ny && ny < StageMapInfo.STAGE_COL)
+                {
+                    //nowMap[x][y]がnullでなく水ブロックかどうか
+                    if (BlockMap.nowMap[nx, ny] != null && BlockMap.nowMap[nx, ny].GetComponent<Block>().blockElement == Elements.Hydro)
+                    {
+                        Frozen(BlockMap.nowMap[nx, ny]);
+                    }
+                }
+            }
+        }
+    }
+
+    public void BreakFrozen(GameObject block)
+    {
+        Block b = block.GetComponent<Block>();
+        int x = b.row;
+        int y = b.col;
+
+        BlockMap.nowMap[x, y] = null;
+        Destroy(block);
+
+        for (int dx = -1; dx <= 1; dx++)
+        {
+            for (int dy = -1; dy <= 1; dy++)
+            {
+                //x方向にdx,y方向にdy移動した場所を(nx,ny)とする
+                int nx = x + dx;
+                int ny = y + dy;
+
+                //nx,nyがブロックマップの範囲内かどうかとnowMap[x][y]が凍結ブロックかどうかを判定
+                if (0 <= nx && nx < StageMapInfo.STAGE_ROW && 0 <= ny && ny < StageMapInfo.STAGE_COL)
+                {
+                    if (BlockMap.nowMap[nx, ny] != null && BlockMap.nowMap[nx, ny].GetComponent<Block>().isFrozen == true)
+                    {
+                        BreakFrozen(BlockMap.nowMap[nx, ny]);
+                    }
+                }
+            }
+        }
 
 ## 参考文献  
 blockmap:  
